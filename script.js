@@ -1,6 +1,11 @@
-document.querySelector('.theme').addEventListener('click',() => {
-    document.body.classList.toggle('light')
+document.querySelector('.sun').addEventListener('click',() => {
+    document.body.classList.add('light')
 } )
+
+document.querySelector('.moon').addEventListener('click',() => {
+    document.body.classList.remove('light')
+} )
+
 
 function toggle(){
     var sec = document.getElementById('sec');
