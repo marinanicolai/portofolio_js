@@ -69,5 +69,27 @@ header #toggle:after {
     min-height: 100vh;
     padding: 100px;
     background-color: black;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
 
+.banner.active {
+    transform: translateX(-400px);
+}
+#navigation {
+    position: fixed;
+    top:0;
+    right:-400px;
+    width:400px;
+    height:100vh;
+    background: #40c3ff;
+    z-index:1;
+    display:grid;
+    place-items:center;
+    transition:0.5s;
+}
+#navigation.active {
+  right:0;
 }
