@@ -194,5 +194,10 @@ header #toggle:after {
         position: absolute;
         bottom: 50px;
         right:initial;
+        flex-direction: row;
+    }
+    .sci li a {
+        margin:initial;
+        margin-right:10px;
     }
 }
