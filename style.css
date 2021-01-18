@@ -1,10 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
 
+:root {
+    --transition-delay: 1s;
+    --background-color: #fff;
+    --text-color : #333;
+}
 * {
     font-family: 'Fraunces', serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body.light header #toggle:before,
+body.light header #toggle:after
+{
+  background-color: #000;
+}
+
+body.light .banner{
+  background-color: #fff;
+  color:#333;
+}
+
+body.light header .logo,
+body.light header #toggle:before,
+body.light header #toggle:after,
+body.light .banner .mode ul.theme li a i,
+body.light #navigation ul li a,
+body.light .content h2,
+body.light .content p,
+body.light .content a{
+    color: #000;
 }
 
 header {
@@ -27,9 +54,6 @@ header .logo {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition:0.6s;
-}
-header .mode {
-
 }
 header #toggle {
     position: relative;
@@ -106,7 +130,7 @@ header #toggle:after {
     right:-400px;
     width:400px;
     height:100vh;
-    background: #40c3ff;
+    background: #403cff;;
     z-index:1;
     display:grid;
     place-items:center;
