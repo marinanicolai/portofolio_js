@@ -92,4 +92,107 @@ header #toggle:after {
 }
 #navigation.active {
   right:0;
+  padding: 5em;
+}
+
+#navigation ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#navigation ul li {
+    list-style: none;
+}
+#navigation ul li a {
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.content {
+    max-width:600px;
+}
+.content h2 {
+    color:#fff;
+    font-size: 2.5em;
+}
+.content h2 span {
+    color: #403cff;
+    font-size: 1.2em;
+}
+.content p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+.content a {
+    position: relative;
+    display: inline-block;
+    margin-top:20px;
+    background: #fff;
+    color:#000;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size:1.2em;
+    font-weight: 500;
+}
+.sci {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    right: 100px;
+}
+.sci li {
+    list-style: none;
+    text-decoration: none;
+}
+.sci li a {
+    position:relative;
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    border:1px soid #fff;
+    margin:10px 0 0;
+}
+
+.sci li a:hover {
+   background-color: #fff;
+}
+
+.sci li a i{
+    max-width:20px;
+    filter:invert(1);
+    mix-blend-mode: difference;
+}
+@media (max-width: 767px)
+{
+    header {
+    padding: 20px 50px;
+    }
+    .banner {
+    padding: 100px 50px 150px;
+    }
+    .banner h2 {
+    font-size: 1.8em;
+    }
+    .banner .content p,
+    .banner content a {
+    font-size: 1em;   
+    }
+    .banner.active {
+    transform: translateX(-400px)
+    }
+    #navigation ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+    .sci {
+        position: absolute;
+        bottom: 50px;
+        right:initial;
+    }
 }
